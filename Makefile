@@ -24,6 +24,7 @@ TARGETS := udpgame_server udpgame_client
 OUTPUT := $(TARGETS) $(BUILD_DIR)
 
 WARN := -pedantic -Wall -Wextra -Wno-unused-parameter -Weffc++
+WARN += -Wnon-virtual-dtor -Wsign-compare
 
 PKGS := glew SDL_image sdl glu protobuf
 
